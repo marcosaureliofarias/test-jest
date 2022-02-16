@@ -1,0 +1,23 @@
+on:
+  push:
+    branches: [main]
+
+name: test-github-actions
+
+jobs:
+  deploy:
+    name: test unit
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Aplication dependency
+      run:  yarn install
+
+    - name: Aplication test
+      run:  yarn test
+
+    - name: teste realizado com sucesso
+      run: echo deploy success
