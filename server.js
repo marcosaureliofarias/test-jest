@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/teste1', (req, res) => {
-    res.send({test1: 'teste1'})
+    res.send({message: 'teste1'})
 })
 
 app.get('/teste2', (req, res) => {
-    res.send({test2: 'teste2'})
+    res.send({message: 'teste2'})
 })
 
 module.exports = app

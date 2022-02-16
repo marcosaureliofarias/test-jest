@@ -16,7 +16,7 @@ describe('Test my app server', () => {
         const res = await request(app).get('/teste1')
 
         expect(res.statusCode).toEqual(200)
-        expect(res.body).toHaveProperty('test1')
+        expect(res.body).toHaveProperty('message')
     })
 })
 
@@ -26,6 +26,6 @@ describe('Test my app server', () => {
         const res = await request(app).get('/teste2')
 
         expect(res.statusCode).toEqual(200)
-        expect(res.body).toHaveProperty('test2')
+        expect(res.body).toHaveProperty('message')
     })
 })
