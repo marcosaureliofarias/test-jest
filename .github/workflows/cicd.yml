@@ -20,4 +20,7 @@ jobs:
       run:  yarn test
 
     - name: teste realizado com sucesso
+      run: echo testes realizado com sucesso 
+
+    - name: deploy feito com sucesso
       run: echo deploy success
