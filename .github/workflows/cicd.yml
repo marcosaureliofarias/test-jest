@@ -2,7 +2,7 @@ on:
   push:
     branches: [main]
 
-name: test-github-actions
+name: github-actions
 
 jobs:
   deploy:
@@ -13,10 +13,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Aplication dependency
+    - name: Instalando dependencias
       run:  yarn install
 
-    - name: Aplication test
+    - name: executando teste
       run:  yarn test
 
     - name: teste realizado com sucesso
