@@ -15,5 +15,8 @@ app.get('/teste1', (req, res) => {
 app.get('/teste2', (req, res) => {
     res.send({message: 'teste2'})
 })
+app.get('/teste3', (req, res) => {
+    res.send({message: 'teste3'})
+})
 
 module.exports = app
